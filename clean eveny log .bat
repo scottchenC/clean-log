@@ -1,0 +1,6 @@
+@ECHO OFF
+TITLE Clean EventLog
+ 
+FOR /F %%I IN ('WEVTUTIL EL') DO (WEVTUTIL CL %%I)
+ 
+PAUSE
